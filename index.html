@@ -127,7 +127,17 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 .contact-note{margin-top:18px;font-size:11px;color:#767f8d}
 @media(max-width:900px){.social-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:650px){.contacts-section{padding:54px 0}.contact-shell{padding:31px 19px 27px;border-radius:24px}.social-row{grid-template-columns:1fr}.social-link{justify-content:center;width:100%;min-width:0}}
-.shorts-section{padding:62px 0;border-top:1px solid var(--line);margin-top:22px}.shorts-empty{min-height:180px;border:1px dashed #353b45;border-radius:var(--r);display:grid;place-items:center;text-align:center;padding:28px;color:#6f7784;letter-spacing:.08em;font-size:12px;background:linear-gradient(135deg,rgba(255,255,255,.02),rgba(255,255,255,.005))}
+.shorts-section{padding:62px 0;border-top:1px solid var(--line);margin-top:22px}
+.shorts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
+.media.vertical{aspect-ratio:9/16}
+.short-card .card-body{padding:16px 15px 17px}
+.short-card h3{font-size:16px;line-height:1.22;margin-bottom:0}
+.short-card .eyebrow{font-size:9px;margin-bottom:8px}
+.short-card .card-foot{margin-top:15px}
+.short-card .play{width:50px;height:50px;font-size:18px;left:14px;bottom:14px}
+@media(max-width:1000px){.shorts-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.shorts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:460px){.shorts-grid{grid-template-columns:1fr}}.shorts-empty{min-height:180px;border:1px dashed #353b45;border-radius:var(--r);display:grid;place-items:center;text-align:center;padding:28px;color:#6f7784;letter-spacing:.08em;font-size:12px;background:linear-gradient(135deg,rgba(255,255,255,.02),rgba(255,255,255,.005))}
 .about{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:34px;padding-top:58px;margin-top:8px}.about h2{font-size:46px;letter-spacing:-.04em;margin:0}.about p{font-size:18px;line-height:1.7;color:#b7bcc5;margin:0}footer{padding:34px 0 50px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
 .hidden-by-filter{display:none!important}
 @media(max-width:900px){.section-grid{grid-template-columns:1fr}.banner-row{display:grid;grid-template-columns:1fr}.banner-count{justify-self:start}.about{grid-template-columns:1fr}}
@@ -664,11 +674,237 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
           <h2>Шорты</h2>
           <p>Короткие вертикальные ролики, Reels и другие короткие AI-видео.</p>
         </div>
-        <div class="banner-count">скоро</div>
+        <div class="banner-count">15 работ</div>
       </div>
     </div>
 
-    <div class="shorts-empty">SHORTS / сюда добавим вертикальные работы</div>
+    <div class="shorts-grid">
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1_dlho2efLugLoGMBcJQqcZ9k1HHpvYvr">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1_dlho2efLugLoGMBcJQqcZ9k1HHpvYvr&sz=w900" alt="Он знал правду до моего рождения. Теперь он пришел за оплатой">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>Он знал правду до моего рождения. Теперь он пришел за оплатой</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1_dlho2efLugLoGMBcJQqcZ9k1HHpvYvr/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1RdPxQv8e97XfQ3AQnBJlMP5jsAR3eheB">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1RdPxQv8e97XfQ3AQnBJlMP5jsAR3eheB&sz=w900" alt="Я стала служанкой в доме, где хозяин не выходит к солнцу">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>Я стала служанкой в доме, где хозяин не выходит к солнцу</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1RdPxQv8e97XfQ3AQnBJlMP5jsAR3eheB/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1rVrWa-wsDNal5Ef0F38ShV8Yr2yhN-FJ">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1rVrWa-wsDNal5Ef0F38ShV8Yr2yhN-FJ&sz=w900" alt="школа 1">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>школа 1</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1rVrWa-wsDNal5Ef0F38ShV8Yr2yhN-FJ/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1xZbf-bEO2nRX2FjeVA4nElwyDiB1zo2-">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1xZbf-bEO2nRX2FjeVA4nElwyDiB1zo2-&sz=w900" alt="ПАПА ПРИШЕЛ ДОМОЙ ДВАЖДЫ">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>ПАПА ПРИШЕЛ ДОМОЙ ДВАЖДЫ</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1xZbf-bEO2nRX2FjeVA4nElwyDiB1zo2-/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1Fh4WkK2k3b4KYEjgB6psWKQLDJDfJjYp">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1Fh4WkK2k3b4KYEjgB6psWKQLDJDfJjYp&sz=w900" alt="Я была уверена, что иду одна">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>Я была уверена, что иду одна</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1Fh4WkK2k3b4KYEjgB6psWKQLDJDfJjYp/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1qOQH0yJUzEZ3R7vgKtUSxQINbY5AcbND">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1qOQH0yJUzEZ3R7vgKtUSxQINbY5AcbND&sz=w900" alt="Он прошептал моё имя, хотя мы никогда не говорили">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>Он прошептал моё имя, хотя мы никогда не говорили</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1qOQH0yJUzEZ3R7vgKtUSxQINbY5AcbND/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="10kssmma1Z_xp0E_ZthVV3hfEprGDS6XV">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=10kssmma1Z_xp0E_ZthVV3hfEprGDS6XV&sz=w900" alt="Почему ты ставишь меня на паузу, когда мне больно">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>Почему ты ставишь меня на паузу, когда мне больно</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/10kssmma1Z_xp0E_ZthVV3hfEprGDS6XV/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1X5Ri0IHcG8a4CkuGID7zDBFoD53g7chn">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1X5Ri0IHcG8a4CkuGID7zDBFoD53g7chn&sz=w900" alt="я не была идеальной">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>я не была идеальной</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1X5Ri0IHcG8a4CkuGID7zDBFoD53g7chn/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1N_iDe1Vby_7LoQWRi3Qq0cnvn5cZ4joX">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1N_iDe1Vby_7LoQWRi3Qq0cnvn5cZ4joX&sz=w900" alt="я не задала вопрос">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>я не задала вопрос</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1N_iDe1Vby_7LoQWRi3Qq0cnvn5cZ4joX/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1KF6BrpfiSQpGDWrtLD69ODUyldj3Lx1-">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1KF6BrpfiSQpGDWrtLD69ODUyldj3Lx1-&sz=w900" alt="я сделала вид что все нормально">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>я сделала вид что все нормально</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1KF6BrpfiSQpGDWrtLD69ODUyldj3Lx1-/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1KHAaayKiLjxNGsBr2OtL5rECYrwvag5C">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1KHAaayKiLjxNGsBr2OtL5rECYrwvag5C&sz=w900" alt="я не стала объяснять">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>я не стала объяснять</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1KHAaayKiLjxNGsBr2OtL5rECYrwvag5C/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1wPS0j3OC1Xebd7SgPUR4byGGYt1MICSU">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1wPS0j3OC1Xebd7SgPUR4byGGYt1MICSU&sz=w900" alt="я влюбилась 2">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>я влюбилась 2</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1wPS0j3OC1Xebd7SgPUR4byGGYt1MICSU/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="19oEtEuVpN-oeDzcekMq9EuwzeuYQWdOj">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=19oEtEuVpN-oeDzcekMq9EuwzeuYQWdOj&sz=w900" alt="он сущестоввал">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>он сущестоввал</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/19oEtEuVpN-oeDzcekMq9EuwzeuYQWdOj/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="1kqsFzLxLKeXU1kqdJdsS2l9zG_l7K_Wj">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1kqsFzLxLKeXU1kqdJdsS2l9zG_l7K_Wj&sz=w900" alt="я придумала нас">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>я придумала нас</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1kqsFzLxLKeXU1kqdJdsS2l9zG_l7K_Wj/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card short-card">
+        <div class="media vertical" data-id="12bbnp_qSYbgceROxqc808fJGeFLBjTCx">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=12bbnp_qSYbgceROxqc808fJGeFLBjTCx&sz=w900" alt="Он был идеальным . Пока я не закрыла книгу">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">SHORT / AI-видео</div>
+          <h3>Он был идеальным . Пока я не закрыла книгу</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/12bbnp_qSYbgceROxqc808fJGeFLBjTCx/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
 
     <div id="short-series" class="category-banner short-series-banner">
       <div class="banner-kicker">SHORT SERIES</div>
