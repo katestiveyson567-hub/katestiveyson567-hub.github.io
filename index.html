@@ -96,6 +96,24 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 .writer-steps{display:grid;gap:11px;margin-top:15px}.writer-step{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;color:#bac0c9;font-size:13px;line-height:1.5}.step-num{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#ece9e1;color:#111;font-size:11px;font-weight:800}
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.writer-bottom{grid-template-columns:1fr}}
 @media(max-width:650px){.writers-section{padding:46px 0}.writers-hero{padding:23px 18px 22px;border-radius:22px}.writers-hero h2{font-size:clamp(24px,8vw,34px)}.service-grid{grid-template-columns:1fr}.service-card{min-height:auto;padding:17px}}
+.contacts-section{padding:72px 0 76px;border-top:1px solid var(--line)}
+.contact-shell{position:relative;overflow:hidden;isolation:isolate;border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:44px 38px 38px;text-align:center;background:
+ radial-gradient(circle at 82% 18%,rgba(224,78,170,.26),transparent 25%),
+ radial-gradient(circle at 18% 100%,rgba(88,95,255,.20),transparent 38%),
+ linear-gradient(135deg,#1c1420 0%,#12151d 58%,#0f1116 100%);box-shadow:0 24px 70px rgba(0,0,0,.26)}
+.contact-shell:after{content:"";position:absolute;z-index:-1;width:420px;height:420px;border-radius:50%;right:-130px;top:-220px;background:rgba(176,78,226,.24);filter:blur(18px);box-shadow:0 0 100px 45px rgba(93,91,255,.13)}
+.contact-kicker{font-family:"Unbounded",sans-serif;font-size:10px;font-weight:600;letter-spacing:.17em;color:#efa8d2;margin-bottom:16px}
+.contact-shell h2{font-family:"Unbounded",sans-serif;font-size:clamp(27px,4vw,44px);line-height:1.1;letter-spacing:-.035em;margin:0 auto 14px;max-width:760px}
+.contact-shell p{font-size:15px;line-height:1.65;color:#aeb5c0;max-width:700px;margin:0 auto}
+.contact-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:25px;padding:13px 21px;border-radius:999px;background:#f2efe7;color:#0e1014;text-decoration:none;font-weight:800;font-size:14px;box-shadow:0 12px 35px rgba(240,237,230,.12);transition:.2s}
+.contact-primary:hover{transform:translateY(-2px);box-shadow:0 15px 42px rgba(240,237,230,.18)}
+.contact-primary .arrow{font-size:16px}
+.social-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.social-link{display:inline-flex;align-items:center;gap:9px;padding:10px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(8,10,14,.28);color:#d8dde5;text-decoration:none;font-size:12px;transition:.2s;backdrop-filter:blur(8px)}
+.social-link:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.06)}
+.social-mark{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;font-size:9px;font-weight:800;letter-spacing:.04em;background:#ece9e2;color:#111}
+.contact-note{margin-top:18px;font-size:11px;color:#767f8d}
+@media(max-width:650px){.contacts-section{padding:54px 0}.contact-shell{padding:31px 19px 27px;border-radius:24px}.social-row{display:grid;grid-template-columns:1fr 1fr}.social-link{justify-content:center}}
 .shorts-section{padding:62px 0;border-top:1px solid var(--line);margin-top:22px}.shorts-empty{min-height:180px;border:1px dashed #353b45;border-radius:var(--r);display:grid;place-items:center;text-align:center;padding:28px;color:#6f7784;letter-spacing:.08em;font-size:12px;background:linear-gradient(135deg,rgba(255,255,255,.02),rgba(255,255,255,.005))}
 .about{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:34px;padding-top:58px;margin-top:8px}.about h2{font-size:46px;letter-spacing:-.04em;margin:0}.about p{font-size:18px;line-height:1.7;color:#b7bcc5;margin:0}footer{padding:34px 0 50px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
 .hidden-by-filter{display:none!important}
@@ -104,7 +122,7 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><div class="brand">MIA GAMES / AI</div><nav><a href="#works">Видео</a><a href="#writers">Для писателей</a><a href="#shorts">Shorts</a><a href="#about">Обо мне</a></nav></div></header>
+<header><div class="wrap nav"><div class="brand">MIA GAMES / AI</div><nav><a href="#works">Видео</a><a href="#writers">Для писателей</a><a href="#shorts">Shorts</a><a href="#about">Обо мне</a><a href="#contacts">Контакты</a></nav></div></header>
 <main>
 <section id="works"><div class="wrap">
 <div class="section-head"><h2>Горизонтальные AI-видео</h2></div>
@@ -613,6 +631,37 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 </div></section>
 
 <section id="about"><div class="wrap about"><h2>AI-контент как законченный продукт.</h2><p>Концепция, сценарий, персонажи, визуальный стиль, генерация сцен, музыка и монтаж. Портфолио будем расширять по мере появления новых работ.</p></div></section>
+
+<section id="contacts" class="contacts-section">
+  <div class="wrap">
+    <div class="contact-shell">
+      <div class="contact-kicker">СВЯЗАТЬСЯ</div>
+      <h2>Готовы обсудить ваш проект?</h2>
+      <p>Расскажите, что хотите создать — рекламный ролик, AI-видео, клип, оформление книги или другой визуальный проект. Обсудим задачу и подберём подходящий формат.</p>
+
+      <a class="contact-primary" href="https://t.me/mia74" target="_blank" rel="noopener">
+        Написать в Telegram <span class="arrow">↗</span>
+      </a>
+
+      <div class="social-row">
+        <a class="social-link" href="https://vk.ru/mia_malinovskaya" target="_blank" rel="noopener">
+          <span class="social-mark">VK</span><span>ВКонтакте</span>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/fangs.tory/reels/" target="_blank" rel="noopener">
+          <span class="social-mark">IG</span><span>Instagram</span>
+        </a>
+        <a class="social-link" href="https://t.me/mia74" target="_blank" rel="noopener">
+          <span class="social-mark">TG</span><span>Telegram</span>
+        </a>
+        <a class="social-link" href="https://www.youtube.com/@SimsStorieslife/featured" target="_blank" rel="noopener">
+          <span class="social-mark">YT</span><span>YouTube</span>
+        </a>
+      </div>
+
+      <div class="contact-note">Все кнопки ведут напрямую на мои страницы в социальных сетях.</div>
+    </div>
+  </div>
+</section>
 </main>
 <footer><div class="wrap">© 2026 MIA GAMES · AI CONTENT PORTFOLIO</div></footer>
 
