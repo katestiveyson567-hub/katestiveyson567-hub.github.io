@@ -116,6 +116,36 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 .writer-steps{display:grid;gap:11px;margin-top:15px}.writer-step{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;color:#bac0c9;font-size:13px;line-height:1.5}.step-num{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#ece9e1;color:#111;font-size:11px;font-weight:800}
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.writer-bottom{grid-template-columns:1fr}}
 @media(max-width:650px){.writers-section{padding:46px 0}.writers-hero{padding:23px 18px 22px;border-radius:22px}.writers-hero h2{font-size:clamp(24px,8vw,34px)}.service-grid{grid-template-columns:1fr}.service-card{min-height:auto;padding:17px}}
+.voiceover-section{padding:58px 0 62px;border-top:1px solid var(--line);margin-top:22px}
+.voiceover-hero{position:relative;overflow:hidden;isolation:isolate;border:1px solid rgba(255,255,255,.15);border-radius:28px;padding:30px 30px 28px;margin-bottom:24px;background:
+ radial-gradient(circle at 86% 20%,rgba(235,93,156,.28),transparent 25%),
+ radial-gradient(circle at 68% 100%,rgba(115,87,255,.22),transparent 38%),
+ linear-gradient(125deg,#21151e 0%,#171620 52%,#111318 100%);box-shadow:0 22px 60px rgba(0,0,0,.24)}
+.voiceover-hero:after{content:"";position:absolute;z-index:-1;width:420px;height:420px;right:-125px;top:-220px;border-radius:50%;background:rgba(202,78,207,.24);filter:blur(16px);box-shadow:0 0 110px 50px rgba(100,82,255,.14)}
+.voiceover-kicker{font-family:"Unbounded",sans-serif;font-size:10px;font-weight:600;letter-spacing:.17em;color:#efabd1;margin-bottom:15px}
+.voiceover-hero h2{font-family:"Unbounded",sans-serif;font-weight:600;font-size:clamp(27px,3.6vw,42px);line-height:1.1;letter-spacing:-.035em;margin:0 0 12px}
+.voiceover-hero p{font-size:15px;line-height:1.62;color:#b8bec8;max-width:790px;margin:0}
+.voice-group{margin-top:24px}
+.voice-banner{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.13);border-radius:22px;padding:23px 24px 21px;margin-bottom:16px;background:#15171d}
+.voice-banner.emotions{background:
+ radial-gradient(circle at 88% 15%,rgba(255,108,143,.26),transparent 28%),
+ linear-gradient(125deg,#25171d,#18161d 58%,#111318)}
+.voice-banner.characters{background:
+ radial-gradient(circle at 88% 15%,rgba(83,151,255,.28),transparent 28%),
+ linear-gradient(125deg,#111d2a,#151823 58%,#111318)}
+.voice-banner .voice-label{font-family:"Unbounded",sans-serif;font-size:9px;letter-spacing:.15em;color:#9da5b2;margin-bottom:10px}
+.voice-banner h3{font-family:"Unbounded",sans-serif;font-size:clamp(20px,2.7vw,29px);line-height:1.18;margin:0 0 7px}
+.voice-banner p{margin:0;color:#989faa;font-size:13px;line-height:1.55}
+.voice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.voice-card{background:#101216;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.voice-card .media.horizontal{aspect-ratio:16/9}
+.voice-card .card-body{padding:15px 15px 17px}
+.voice-card h3{font-size:16px;line-height:1.22;margin-bottom:0}
+.voice-card .eyebrow{font-size:9px;margin-bottom:7px}
+.voice-card .card-foot{margin-top:14px}
+.voice-card .play{width:48px;height:48px;font-size:17px;left:13px;bottom:13px}
+@media(max-width:900px){.voice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.voice-grid{grid-template-columns:1fr}.voiceover-hero{padding:24px 19px 22px;border-radius:22px}}
 .contacts-section{padding:72px 0 76px;border-top:1px solid var(--line)}
 .contact-shell{position:relative;overflow:hidden;isolation:isolate;border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:44px 38px 38px;text-align:center;background:
  radial-gradient(circle at 82% 18%,rgba(224,78,170,.26),transparent 25%),
@@ -177,6 +207,7 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
       <a href="#works">Видео</a>
       <a href="#writers">Для писателей</a>
       <a href="#shorts">Shorts</a>
+      <a href="#voiceover">Озвучка</a>
       <a href="#about">Обо мне</a>
     </nav>
 
@@ -196,6 +227,7 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 <a class="filter jump-filter" href="#shorts">Шорты</a>
 <a class="filter jump-filter" href="#short-series">Шорт-сериалы</a>
 <a class="filter jump-filter" href="#writers">Для писателей</a>
+<a class="filter jump-filter" href="#voiceover">Озвучка</a>
 </div>
 </div></section>
 
@@ -1009,6 +1041,161 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 </section>
 
 
+<section id="voiceover" class="voiceover-section">
+  <div class="wrap">
+    <div class="voiceover-hero">
+      <div class="voiceover-kicker">ОЗВУЧКА И ГОЛОС</div>
+      <h2>Озвучка для историй и персонажей</h2>
+      <p>Примеры эмоциональной подачи и разных характеров голоса. Здесь можно услышать, как одна и та же подача меняется под сцену, настроение и персонажа.</p>
+    </div>
+
+    <div class="voice-group">
+      <div class="voice-banner emotions">
+        <div class="voice-label">VOICE / EMOTIONS</div>
+        <h3>Разные эмоции</h3>
+        <p>Драма, растерянность, злость, напряжение и другие эмоциональные состояния.</p>
+      </div>
+      <div class="voice-grid">
+        <article class="voice-card">
+        <div class="media horizontal" data-id="1QQqaVENbzkY7b1osV2SOsFXS_6avMQ-R">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1QQqaVENbzkY7b1osV2SOsFXS_6avMQ-R&sz=w1200" alt="Узнала правду">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Эмоциональная озвучка</div>
+          <h3>Узнала правду</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1QQqaVENbzkY7b1osV2SOsFXS_6avMQ-R/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1AkjhksvApbo0JNxn7KlVJzXmAFEHlDv5">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1AkjhksvApbo0JNxn7KlVJzXmAFEHlDv5&sz=w1200" alt="Расстроенная девушка узнала об измене парня">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Эмоциональная озвучка</div>
+          <h3>Расстроенная девушка узнала об измене парня</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1AkjhksvApbo0JNxn7KlVJzXmAFEHlDv5/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1TFynQEq31LtWpvnRQqlEovBueAxm0qfQ">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1TFynQEq31LtWpvnRQqlEovBueAxm0qfQ&sz=w1200" alt="Злая королева и служанки">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Эмоциональная озвучка</div>
+          <h3>Злая королева и служанки</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1TFynQEq31LtWpvnRQqlEovBueAxm0qfQ/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1D9FGaE-guGKRh0u9zAZmmedzq28WNW9s">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1D9FGaE-guGKRh0u9zAZmmedzq28WNW9s&sz=w1200" alt="Злая тетка и золушка">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Эмоциональная озвучка</div>
+          <h3>Злая тетка и золушка</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1D9FGaE-guGKRh0u9zAZmmedzq28WNW9s/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+
+    <div class="voice-group">
+      <div class="voice-banner characters">
+        <div class="voice-label">VOICE / CHARACTERS</div>
+        <h3>Разные персонажи</h3>
+        <p>Разные характеры, роли и манера речи — от сказочных героинь до драматических персонажей.</p>
+      </div>
+      <div class="voice-grid">
+        <article class="voice-card">
+        <div class="media horizontal" data-id="16YmtRwX4LEXVe6t9K0vNGi4eozxHGWFK">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=16YmtRwX4LEXVe6t9K0vNGi4eozxHGWFK&sz=w1200" alt="Сыграем в игру — ведьма и девушка">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Персонажи / озвучка</div>
+          <h3>Сыграем в игру — ведьма и девушка</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/16YmtRwX4LEXVe6t9K0vNGi4eozxHGWFK/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1L7FRiyX3W7y7e1-02p0ANR_oNM5e3LsO">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1L7FRiyX3W7y7e1-02p0ANR_oNM5e3LsO&sz=w1200" alt="Анонс царица 2">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Персонажи / озвучка</div>
+          <h3>Анонс царица 2</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1L7FRiyX3W7y7e1-02p0ANR_oNM5e3LsO/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1TaL4X2MNUOzFDRpZs5SdDY23OUeYBe2Q">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1TaL4X2MNUOzFDRpZs5SdDY23OUeYBe2Q&sz=w1200" alt="Пример дорамы">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Персонажи / озвучка</div>
+          <h3>Пример дорамы</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1TaL4X2MNUOzFDRpZs5SdDY23OUeYBe2Q/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1WR_2hL5NYs4Gzyw8mtagmEfbSiaQdHrY">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1WR_2hL5NYs4Gzyw8mtagmEfbSiaQdHrY&sz=w1200" alt="Пример 5">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Персонажи / озвучка</div>
+          <h3>Пример 5</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1WR_2hL5NYs4Gzyw8mtagmEfbSiaQdHrY/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+<article class="voice-card">
+        <div class="media horizontal" data-id="1zvY4nyxsglUTVge62jqwmBcjQwBZigJn">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1zvY4nyxsglUTVge62jqwmBcjQwBZigJn&sz=w1200" alt="Пример разных героеев">
+          <button class="play" aria-label="Смотреть">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Персонажи / озвучка</div>
+          <h3>Пример разных героеев</h3>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1zvY4nyxsglUTVge62jqwmBcjQwBZigJn/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="about"><div class="wrap about"><h2>AI-контент как законченный продукт.</h2><p>Концепция, сценарий, персонажи, визуальный стиль, генерация сцен, музыка и монтаж. Портфолио будем расширять по мере появления новых работ.</p></div></section>
 
