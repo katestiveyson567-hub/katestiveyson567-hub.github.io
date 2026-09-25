@@ -67,6 +67,11 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
  linear-gradient(125deg,#191526 0%,#15131d 50%,#111318 100%);border-color:rgba(154,116,255,.28)}
 #shorts .category-banner:after{background:rgba(130,98,255,.25);box-shadow:0 0 110px 55px rgba(218,83,180,.12)}
 #shorts .banner-kicker{color:#bba8ff}
+#shorts .short-series-banner{margin-top:28px;background:
+ radial-gradient(circle at 88% 18%,rgba(225,74,167,.24),transparent 25%),
+ radial-gradient(circle at 68% 100%,rgba(102,72,255,.20),transparent 38%),
+ linear-gradient(125deg,#211522 0%,#17141f 50%,#111318 100%);border-color:rgba(214,96,188,.26)}
+#shorts .short-series-banner .banner-kicker{color:#efa9d5}
 .section-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.22s}.card:hover{transform:translateY(-3px);border-color:#3b424d}.media{position:relative;background:#050607;overflow:hidden}.media.horizontal{aspect-ratio:16/9}.poster{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.03);background:#101217}.media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,rgba(0,0,0,.55));pointer-events:none}
 .play{position:absolute;z-index:3;left:18px;bottom:18px;width:58px;height:58px;border:0;border-radius:50%;background:#f3f1eb;color:#0b0c0e;font-size:21px;cursor:pointer;box-shadow:0 10px 35px rgba(0,0,0,.28)}.play:hover{transform:scale(1.05)}.player{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:5;background:#000}
@@ -633,10 +638,37 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
   </div>
 </section>
 
-<section id="shorts" class="shorts-section"><div class="wrap">
-<div class="category-banner"><div class="banner-kicker">SHORTS</div><div class="banner-row"><div><h2>Вертикальные ролики — отдельным блоком</h2><p>Shorts и Reels не смешиваем с горизонтальным портфолио. Этот раздел заполним позже.</p></div><div class="banner-count">скоро</div></div></div>
-<div class="shorts-empty">SHORTS / сюда позже добавим вертикальные работы</div>
-</div></section>
+<section id="shorts" class="shorts-section">
+  <div class="wrap">
+
+    <div class="category-banner">
+      <div class="banner-kicker">SHORTS</div>
+      <div class="banner-row">
+        <div>
+          <h2>Шорты</h2>
+          <p>Короткие вертикальные ролики, Reels и другие короткие AI-видео.</p>
+        </div>
+        <div class="banner-count">скоро</div>
+      </div>
+    </div>
+
+    <div class="shorts-empty">SHORTS / сюда добавим вертикальные работы</div>
+
+    <div id="short-series" class="category-banner short-series-banner">
+      <div class="banner-kicker">SHORT SERIES</div>
+      <div class="banner-row">
+        <div>
+          <h2>Шорт-сериалы</h2>
+          <p>Короткие вертикальные сериалы и истории, разбитые на эпизоды.</p>
+        </div>
+        <div class="banner-count">скоро</div>
+      </div>
+    </div>
+
+    <div class="shorts-empty">ШОРТ-СЕРИАЛЫ / сюда добавим серии и эпизоды</div>
+
+  </div>
+</section>
 
 <section id="about"><div class="wrap about"><h2>AI-контент как законченный продукт.</h2><p>Концепция, сценарий, персонажи, визуальный стиль, генерация сцен, музыка и монтаж. Портфолио будем расширять по мере появления новых работ.</p></div></section>
 
