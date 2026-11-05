@@ -196,6 +196,22 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 @media(max-width:900px){.section-grid{grid-template-columns:1fr}.banner-row{display:grid;grid-template-columns:1fr}.banner-count{justify-self:start}.about{grid-template-columns:1fr}}
 @media(max-width:900px){.nav{grid-template-columns:auto 1fr auto}.header-socials{justify-self:center}nav{display:none}.header-contact{padding-left:14px}}
 @media(max-width:650px){.nav{grid-template-columns:auto 1fr auto;gap:10px}.header-socials{gap:4px}.header-social{width:25px;height:25px;border-radius:8px;font-size:8px}.header-contact{font-size:12px;padding-left:10px}.hero{padding:70px 0 50px}h1{font-size:clamp(38px,11vw,56px)}#works{padding-top:22px}.section-head{display:grid;grid-template-columns:1fr}.portfolio-section{padding:28px 0}.category-banner{padding:24px 20px 23px;border-radius:24px}.category-banner:after{width:300px;height:300px;right:-125px;top:-160px}.banner-row h2{font-size:clamp(22px,7.5vw,30px)}.about{gap:18px}}
+#commissioned-series .category-banner{background:radial-gradient(circle at 88% 24%,rgba(204,149,94,.31),transparent 26%),radial-gradient(circle at 68% 105%,rgba(126,73,147,.20),transparent 38%),linear-gradient(125deg,#221922 0%,#17151d 52%,#111318 100%);border-color:rgba(208,164,106,.33)}
+#commissioned-series .category-banner:after{background:rgba(181,119,110,.29);box-shadow:0 0 110px 55px rgba(117,80,134,.16)}
+#commissioned-series .banner-kicker{color:#ebc59b}
+.kings-project-header{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:8px 0 24px}
+.kings-project-label{color:#cbb5dd;font-size:11px;letter-spacing:.15em;font-weight:700;margin-bottom:11px}
+.kings-project-header h3{font-family:"Unbounded",sans-serif;font-size:clamp(28px,4vw,43px);margin:0 0 9px;line-height:1.15}
+.kings-project-header p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}
+.kings-project-count{white-space:nowrap;border:1px solid var(--line2);border-radius:99px;padding:10px 13px;color:#b8b5bf;font-size:12px}
+.kings-group-title{margin:12px 0 18px;color:#d8d7da;font-size:19px;font-weight:800;letter-spacing:-.02em}
+.kings-shorts-title{margin-top:36px}
+.kings-shorts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,280px));gap:22px}
+.kings-short-card h3{font-size:18px}
+.kings-short-card .card-body{padding:17px}
+.kings-short-card .play{width:52px;height:52px;left:14px;bottom:14px}
+@media(max-width:900px){.kings-shorts-grid{grid-template-columns:repeat(2,minmax(0,280px))}}
+@media(max-width:600px){.kings-project-header{display:block}.kings-project-count{display:inline-block;margin-top:16px}.kings-shorts-grid{grid-template-columns:minmax(0,340px);gap:18px}}
 </style>
 </head>
 <body>
@@ -230,6 +246,7 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 <button class="filter" data-filter="animation">Мультфильмы</button>
 <button class="filter" data-filter="music">Клипы</button>
 <button class="filter" data-filter="series">Сериалы</button>
+<a class="filter jump-filter" href="#commissioned-series">Сериалы на заказ</a>
 <button class="filter" data-filter="short">Короткие истории</button>
 <button class="filter" data-filter="long">Большие видео</button>
 <a class="filter jump-filter" href="#shorts">Шорты</a>
@@ -505,6 +522,155 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
           <div class="card-foot">
             <button class="watch">Смотреть</button>
             <a class="drive" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1mySHK5WzxZ2BhleESZEai5eLxIKIIIp7/view">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-section" id="commissioned-series" data-section-tags="series">
+  <div class="wrap">
+    <div class="category-banner">
+      <div class="banner-kicker">СЕРИАЛЫ НА ЗАКАЗ</div>
+      <div class="banner-row">
+        <div>
+          <h2>Сериалы на заказ</h2>
+          <p>AI-сериалы с героями, сюжетными эпизодами и вертикальными короткими роликами — всё в рамках одного проекта.</p>
+        </div>
+        <div class="banner-count">1 проект · 8 видео</div>
+      </div>
+    </div>
+    <div class="kings-project-header">
+      <div>
+        <div class="kings-project-label">AI-СЕРИАЛ · ПРОЕКТ</div>
+        <h3>Короли</h3>
+        <p>Горизонтальные эпизоды и вертикальные шорты сериала «Короли».</p>
+      </div>
+      <span class="kings-project-count">5 эпизодов · 3 шорта</span>
+    </div>
+    <h4 class="kings-group-title">Эпизоды и ранние выпуски</h4>
+    <div class="section-grid kings-episodes-grid">
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="1CEDZYzGosemovUxt5Izms42goYfJlftk">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1CEDZYzGosemovUxt5Izms42goYfJlftk&sz=w1600" alt="Принцесса отказалась бежать">
+          <button class="play" aria-label="Смотреть Принцесса отказалась бежать">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Ранний выпуск / архив</div>
+          <h3>Принцесса отказалась бежать</h3>
+          <p>Один из ранних роликов сериала «Короли».</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/1CEDZYzGosemovUxt5Izms42goYfJlftk/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="1ehvjYUNCMiPVN51ctOjpma2-fvhdc1xi">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1ehvjYUNCMiPVN51ctOjpma2-fvhdc1xi&sz=w1600" alt="Она беременна от одного из братьев">
+          <button class="play" aria-label="Смотреть Она беременна от одного из братьев">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">Ранний выпуск / архив</div>
+          <h3>Она беременна от одного из братьев</h3>
+          <p>Один из ранних роликов сериала «Короли».</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/1ehvjYUNCMiPVN51ctOjpma2-fvhdc1xi/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="1uYqg_e0VemAmjH-NpJXNRx0Nn1yEJuFd">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1uYqg_e0VemAmjH-NpJXNRx0Nn1yEJuFd&sz=w1600" alt="Король знал о заговоре">
+          <button class="play" aria-label="Смотреть Король знал о заговоре">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">AI-сериал / эпизод 4</div>
+          <h3>Король знал о заговоре</h3>
+          <p>Сериал «Короли» — эпизод 4.</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/1uYqg_e0VemAmjH-NpJXNRx0Nn1yEJuFd/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="1CDdGx9WciQAg3MuW5rHBS3dLIdum9nMl">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1CDdGx9WciQAg3MuW5rHBS3dLIdum9nMl&sz=w1600" alt="Кэтрин жива">
+          <button class="play" aria-label="Смотреть Кэтрин жива">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">AI-сериал / эпизод 5</div>
+          <h3>Кэтрин жива</h3>
+          <p>Сериал «Короли» — эпизод 5.</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/1CDdGx9WciQAg3MuW5rHBS3dLIdum9nMl/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="1vxO6zXVKRgvGJRrFoU7KKFhQtuUDDunI">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1vxO6zXVKRgvGJRrFoU7KKFhQtuUDDunI&sz=w1600" alt="Лиам нашёл её">
+          <button class="play" aria-label="Смотреть Лиам нашёл её">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">AI-сериал / эпизод 6</div>
+          <h3>Лиам нашёл её</h3>
+          <p>Сериал «Короли» — эпизод 6.</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/1vxO6zXVKRgvGJRrFoU7KKFhQtuUDDunI/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <h4 class="kings-group-title kings-shorts-title">Вертикальные шорты</h4>
+    <div class="kings-shorts-grid">
+      <article class="card kings-short-card" data-tags="series short">
+        <div class="media vertical" data-id="14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW&sz=w1600" alt="Короли — шорт 7">
+          <button class="play" aria-label="Смотреть Короли — шорт 7">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">AI-сериал / вертикальный шорт</div>
+          <h3>Короли — шорт 7</h3>
+          <p>Короткий вертикальный ролик сериала «Короли».</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card kings-short-card" data-tags="series short">
+        <div class="media vertical" data-id="11RwXOkD3TquttJCSKwRjlDyhK1eelUMA">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=11RwXOkD3TquttJCSKwRjlDyhK1eelUMA&sz=w1600" alt="Короли — шорт 8">
+          <button class="play" aria-label="Смотреть Короли — шорт 8">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">AI-сериал / вертикальный шорт</div>
+          <h3>Короли — шорт 8</h3>
+          <p>Короткий вертикальный ролик сериала «Короли».</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/11RwXOkD3TquttJCSKwRjlDyhK1eelUMA/view" target="_blank" rel="noopener">Drive ↗</a>
+          </div>
+        </div>
+      </article>
+      <article class="card kings-short-card" data-tags="series short">
+        <div class="media vertical" data-id="1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq&sz=w1600" alt="Короли — шорт 9">
+          <button class="play" aria-label="Смотреть Короли — шорт 9">▶</button>
+        </div>
+        <div class="card-body">
+          <div class="eyebrow">AI-сериал / вертикальный шорт</div>
+          <h3>Короли — шорт 9</h3>
+          <p>Короткий вертикальный ролик сериала «Короли».</p>
+          <div class="card-foot">
+            <button class="watch">Смотреть</button>
+            <a class="drive" href="https://drive.google.com/file/d/1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq/view" target="_blank" rel="noopener">Drive ↗</a>
           </div>
         </div>
       </article>
