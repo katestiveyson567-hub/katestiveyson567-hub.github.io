@@ -205,13 +205,7 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
 .kings-project-header p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}
 .kings-project-count{white-space:nowrap;border:1px solid var(--line2);border-radius:99px;padding:10px 13px;color:#b8b5bf;font-size:12px}
 .kings-group-title{margin:12px 0 18px;color:#d8d7da;font-size:19px;font-weight:800;letter-spacing:-.02em}
-.kings-shorts-title{margin-top:36px}
-.kings-shorts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,280px));gap:22px}
-.kings-short-card h3{font-size:18px}
-.kings-short-card .card-body{padding:17px}
-.kings-short-card .play{width:52px;height:52px;left:14px;bottom:14px}
-@media(max-width:900px){.kings-shorts-grid{grid-template-columns:repeat(2,minmax(0,280px))}}
-@media(max-width:600px){.kings-project-header{display:block}.kings-project-count{display:inline-block;margin-top:16px}.kings-shorts-grid{grid-template-columns:minmax(0,340px);gap:18px}}
+@media(max-width:600px){.kings-project-header{display:block}.kings-project-count{display:inline-block;margin-top:16px}}
 </style>
 </head>
 <body>
@@ -536,7 +530,7 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
       <div class="banner-row">
         <div>
           <h2>Сериалы на заказ</h2>
-          <p>AI-сериалы с героями, сюжетными эпизодами и вертикальными короткими роликами — всё в рамках одного проекта.</p>
+          <p>AI-сериалы с героями, последовательным сюжетом и горизонтальными видео — всё в рамках одного проекта.</p>
         </div>
         <div class="banner-count">1 проект · 8 видео</div>
       </div>
@@ -545,11 +539,11 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
       <div>
         <div class="kings-project-label">AI-СЕРИАЛ · ПРОЕКТ</div>
         <h3>Короли</h3>
-        <p>Горизонтальные эпизоды и вертикальные шорты сериала «Короли».</p>
+        <p>Эпизоды и другие видеоработы сериала «Короли» в горизонтальном формате 16:9.</p>
       </div>
-      <span class="kings-project-count">5 эпизодов · 3 шорта</span>
+      <span class="kings-project-count">8 видео · 16:9</span>
     </div>
-    <h4 class="kings-group-title">Эпизоды и ранние выпуски</h4>
+    <h4 class="kings-group-title">Все видео сериала</h4>
     <div class="section-grid kings-episodes-grid">
       <article class="card kings-episode-card" data-tags="series">
         <div class="media horizontal" data-id="1CEDZYzGosemovUxt5Izms42goYfJlftk">
@@ -626,48 +620,47 @@ h1{font-family:"Unbounded",sans-serif;font-weight:700;font-size:clamp(43px,6.2vw
           </div>
         </div>
       </article>
-    </div>
-    <h4 class="kings-group-title kings-shorts-title">Вертикальные шорты</h4>
-    <div class="kings-shorts-grid">
-      <article class="card kings-short-card" data-tags="series short">
-        <div class="media vertical" data-id="14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW">
-          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW&sz=w1600" alt="Короли — шорт 7">
-          <button class="play" aria-label="Смотреть Короли — шорт 7">▶</button>
+
+
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW&sz=w1600" alt="Короли — выпуск 7">
+          <button class="play" aria-label="Смотреть Короли — выпуск 7">▶</button>
         </div>
         <div class="card-body">
-          <div class="eyebrow">AI-сериал / вертикальный шорт</div>
-          <h3>Короли — шорт 7</h3>
-          <p>Короткий вертикальный ролик сериала «Короли».</p>
+          <div class="eyebrow">AI-сериал / выпуск 7</div>
+          <h3>Короли — выпуск 7</h3>
+          <p>Горизонтальный выпуск сериала «Короли», формат 16:9.</p>
           <div class="card-foot">
             <button class="watch">Смотреть</button>
             <a class="drive" href="https://drive.google.com/file/d/14Ajf9FOyb0h8S_mx4uovbtHYGylBUdJW/view" target="_blank" rel="noopener">Drive ↗</a>
           </div>
         </div>
       </article>
-      <article class="card kings-short-card" data-tags="series short">
-        <div class="media vertical" data-id="11RwXOkD3TquttJCSKwRjlDyhK1eelUMA">
-          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=11RwXOkD3TquttJCSKwRjlDyhK1eelUMA&sz=w1600" alt="Короли — шорт 8">
-          <button class="play" aria-label="Смотреть Короли — шорт 8">▶</button>
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="11RwXOkD3TquttJCSKwRjlDyhK1eelUMA">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=11RwXOkD3TquttJCSKwRjlDyhK1eelUMA&sz=w1600" alt="Короли — выпуск 8">
+          <button class="play" aria-label="Смотреть Короли — выпуск 8">▶</button>
         </div>
         <div class="card-body">
-          <div class="eyebrow">AI-сериал / вертикальный шорт</div>
-          <h3>Короли — шорт 8</h3>
-          <p>Короткий вертикальный ролик сериала «Короли».</p>
+          <div class="eyebrow">AI-сериал / выпуск 8</div>
+          <h3>Короли — выпуск 8</h3>
+          <p>Горизонтальный выпуск сериала «Короли», формат 16:9.</p>
           <div class="card-foot">
             <button class="watch">Смотреть</button>
             <a class="drive" href="https://drive.google.com/file/d/11RwXOkD3TquttJCSKwRjlDyhK1eelUMA/view" target="_blank" rel="noopener">Drive ↗</a>
           </div>
         </div>
       </article>
-      <article class="card kings-short-card" data-tags="series short">
-        <div class="media vertical" data-id="1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq">
-          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq&sz=w1600" alt="Короли — шорт 9">
-          <button class="play" aria-label="Смотреть Короли — шорт 9">▶</button>
+      <article class="card kings-episode-card" data-tags="series">
+        <div class="media horizontal" data-id="1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq">
+          <img class="poster" loading="lazy" src="https://drive.google.com/thumbnail?id=1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq&sz=w1600" alt="Короли — выпуск 9">
+          <button class="play" aria-label="Смотреть Короли — выпуск 9">▶</button>
         </div>
         <div class="card-body">
-          <div class="eyebrow">AI-сериал / вертикальный шорт</div>
-          <h3>Короли — шорт 9</h3>
-          <p>Короткий вертикальный ролик сериала «Короли».</p>
+          <div class="eyebrow">AI-сериал / выпуск 9</div>
+          <h3>Короли — выпуск 9</h3>
+          <p>Горизонтальный выпуск сериала «Короли», формат 16:9.</p>
           <div class="card-foot">
             <button class="watch">Смотреть</button>
             <a class="drive" href="https://drive.google.com/file/d/1LijTti90raj6Bj0-BldPc4_ZQ0gjA6Hq/view" target="_blank" rel="noopener">Drive ↗</a>
